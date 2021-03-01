@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>EXTRA EXTRA!</title>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <link rel="stylesheet" href="./style.css">
+  <script src="https://unpkg.com/merge-images"></script>
+</head>
+<body>
+<h1><i>EXTRA EXTRA!!</i></h1>
+<h2>Help us get out the word about Kode With Klossy Summer 2021!<br>It's easy as 1, 2, 3 ;)</h2><br>
+<div class="bg">
+<h3>1. Upload one of your favorite pictures from camp by clicking the button below. Make sure that your image is cropped to be a square – otherwise it will get automatically cropped!</h3>
+<p><input type="file"  accept="image/*" name="image" id="file"  onchange="loadFile(event)" style="display: none;"/></p>
+<p><label for="file" style="cursor: pointer; color: blue"><strong>Upload An Image!</strong></label></p>
+<div class="parent" hidden="true">
+    <p><img id="output"/></p>
+    <img id="border" src="pics/border1.png"/>
+</div>
+<br>
+<h3>2. Choose from one of our super cool borders below (no worries if you change your mind, you can switch and see which you like better!)</h3><br>
+<div class="buttons">
+<input class="button b1" type="image" src="pics/border1.png"/>
+<input class="button b2" type="image" src="pics/border3.png"/>
+<input class="button b3" type="image" src="pics/border5.png"/>
+<input class="button b4" type="image" src="pics/border7.png"/>
+
+</div><br>
+<!-- partial -->
+
+
+<canvas id="canvas" width="500" height="500"></canvas>
+<h3>3. Download and post to your socials! And don't forget to tag @kodewithklossy :)</h3>
+</div><br>
+  <script src="./script.js"></script>
+
+</body>
+</html>
