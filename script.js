@@ -110,3 +110,9 @@ function download() {
     canvasImage.src=`${bordersrc}`;
 
 }
+
+download_img = function(el) {
+  var canvas = document.getElementById('canvas')
+  var image = canvas.toDataURL("image/png");
+  el.href = image;
+};
