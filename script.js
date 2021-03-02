@@ -113,6 +113,6 @@ function download() {
 
 download_img = function(el) {
   var canvas = document.getElementById('canvas')
-  var image = canvas.toDataURL("image/png");
+  var image = canvas.toDataURL("image/jpg");
   el.href = image;
 };
